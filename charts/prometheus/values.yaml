@@ -756,10 +756,6 @@ serverFiles:
             labels:
               app: 'longhorn'
         metrics_path: '/metrics'
-        relabel_configs:
-         - action: keep
-         regex: 'longhorn_volume_.+'
-         source_labels: ['__name__'] 
 
       # A scrape configuration for running Prometheus on a Kubernetes cluster.
       # This uses separate scrape configs for cluster components (i.e. API server, node)

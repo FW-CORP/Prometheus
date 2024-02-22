@@ -752,7 +752,7 @@ serverFiles:
             - localhost:9090
       - job_name: 'longhorn'
         static_configs:
-          - targets: ['longhorn-engine-manager:9500']
+          - targets: ['10.152.183.215:9500']
             labels:
               app: 'longhorn'
         metrics_path: '/metrics'
